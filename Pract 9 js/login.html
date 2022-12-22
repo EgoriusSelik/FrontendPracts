@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Фавиконка-->
+    <link rel="icon" type="image/svg+xml" href="https://img.icons8.com/3d-fluency/2x/globe-africa.png">
+    <!--Подключение файла со стилями-->
+    <link rel="stylesheet" href="login_style.css">
+    <!--Подключение шрифтов-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter+Tight:ital,wght@1,200&family=Nabla&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерные комплектующие</title>
+</head>
+<body>
+
+            
+    <form>
+        <div class="fon">
+            <input type="button" class="go_to_site" value="Войти на сайт" onClick="Input()">
+        </div>
+    </form>
+
+    <div class="like">
+      <button onclick="btn_clik()" id="button" class="likebtn"><img id="heart" src="heart.png" alt=""><span id="count">1</span></button>
+    </div>
+
+
+    <!--Форма с анимацией-->
+<div class="section_form">
+    <div class="form_box">
+        
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+        <div class="square" style="--i:5;"></div>
+        
+       <div class="form_anmimated_container"> 
+        <div class="form_animated"> 
+          <h2>Вход на сайт</h2>
+    
+          <form action="">
+    
+            <div class="inputBx">
+              <input class="inputBx_pl" type="text" required="required">
+              <span>Логин</span>
+              <i class="fas fa-user-circle"></i>
+            </div>
+    
+            <div class="inputBx password">
+              <input class="inputBx_pl" id="password-input" type="password" name="password" required="required">
+              <span>Пароль</span>
+              <i class="fas fa-key"></i>
+            </div>
+    
+            <label class="remember"><input type="checkbox">
+              Запомнить пароль</label>
+    
+            <div>
+              <input class="inputBx_button" type="submit" value="Вход"> 
+            </div>
+    
+          </form>
+    
+          <p>Забыли пароль? <a href="#">Восстановить</a></p>
+          <p>Еще нет аккаунта? <a href="#">Регистрация</a></p>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

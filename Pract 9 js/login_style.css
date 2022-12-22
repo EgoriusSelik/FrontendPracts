@@ -1,0 +1,202 @@
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+button, input{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Форма с анимацией*/
+
+.fas {
+    width: 32px;
+  }
+  
+.section_form 
+{
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 400% 400%;
+}
+  
+@keyframes gradient 
+{
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+  
+.form_box {
+position: relative;
+}
+.form_box .square {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10%;
+    animation: square 10s linear infinite;
+    width: calc(20px * var(--i));
+    height: calc(20px * var(--i));
+}
+
+@keyframes square {
+    0% {
+    transform: translateY(-20px);
+    }
+    50% {
+    transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+.form_box .square:nth-child(1) {
+
+    top: -15px;
+    right: -45px;
+}
+
+.form_box .square:nth-child(2) {
+
+    top: 105px;
+    left: -125px;
+    z-index: 2;
+}
+
+.form_box .square:nth-child(3) {
+
+    bottom: 85px;
+    right: -45px;
+    z-index: 2;
+}
+
+.form_box .square:nth-child(4) {
+
+    bottom: 35px;
+    left: -95px;
+}
+
+.form_box .square:nth-child(5) {
+
+    top: -15px;
+    left: -25px;
+}
+
+.form_box .square:nth-child(6) {
+
+    top: 165px;
+    right: -155px;
+    z-index: 2;
+}
+
+  
+.form_anmimated_container {
+position: relative;
+padding: 50px;
+width: 260px;
+min-height: 380px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(5px);
+border-radius: 10px;
+box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+  
+.form_anmimated_container::after {
+content: '';
+position: absolute;
+top: 5px;
+right: 5px;
+bottom: 5px;
+left: 5px;
+border-radius: 5px;
+pointer-events: none;
+}
+.remember {
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    cursor: pointer;
+    }
+    
+    .inputBx_pl
+    {
+        border-radius: 30px;
+        padding: 10px;
+        margin-top: 5px;
+        opacity: 30%;
+    }
+    .inputBx_pl:focus
+    {
+        opacity: 60%;
+    }
+    .inputBx_button{
+        padding-top: 4px;
+        opacity: 30%;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 30px;
+        margin-bottom: 8px;
+    }
+
+
+.fon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go_to_site{
+    border-radius: 20px;
+    background-color: #23d5ab;
+    padding: 10px;
+}
+
+.like{
+    display: flex;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.likebtn > img{
+    border-radius: 16px;
+    flex-grow: 0.5; 
+    width: 25%;
+    padding: 5px;
+}
+.likebtn > span{
+    flex-grow: 1;
+}
+.likebtn{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 80px;
+    border-radius: 40px;
+    font-size: 140%;
+}
+
+.clicked{
+    background-color: #f770a4;
+}
+.clicked > img{
+    background-color: #e73c7e;
+}
