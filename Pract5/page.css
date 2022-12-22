@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap');
+    body {    
+    color: #1F1F1F;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6%;
+    line-height: normal;
+    font-weight: 500;
+  }
+
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; 
+ /* background-color: #F3F3F3; */
+  background: url(background.png) ;
+  background: fixed;
+  /*background: no-repeat;*/
+}
+
+main{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 280px;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #1F1F1F;
+  font-size: 110px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 75px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  /*letter-spacing: justify;*/
+  color: #1F1F1F;
+  font-size: 25px;
+  text-justify: inter-character;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.image {
+	position	: relative;
+	width		: 100%; /* for IE 6 */
+}
+
+h3 {
+	width		: 100%;
+}
+
+ul#mirkino{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+}
+
+ul#mirkinoone{
+  display:flex;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+}
+
+ul li#mirkino1, li#mirkino2, li#mirkino3, li#mirkino4, li#mirkino5, li#mirkino6, li#mirkino7, li#mirkino8, li#mirkino9, li#mirkino10, li#mirkino11, li#mirkino12{
+  flex:  10%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 100;
+  color: #1F1F1F;
+  margin: 0 10px;
+
+  font-size: 100;
+}
+
+.titlecontainer{
+  justify-content: center;
+}
+
+
+.h1{
+margin-left: 0;
+margin-top: 80px;
+position: relative;
+top:0;
+}
+
+
+aside{
+    color: #003580;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6%;
+    line-height: normal;
+    font-weight: 500;
+}
+
+p#hardtobelieve{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 10%;
+  letter-spacing: 10% !important;
+}
+
+.topleft, .topright, .bottomleft, .bottomright{
+  width: 45vmax;
+  justify-content: center;
+  min-width: 400px;
+}
+
+.godar{
+  object-fit: cover;
+}
+.kinooperators{
+  position: absolute;
+  top: auto;
+}
+
+.under1{
+  position: relative;
+  left: 480px;
+}
+
+.JS{
+  position: relative;
+  left: 900px;
+  top:-20px;
+}
+
+
+
+
+label{
+  color: white;
+  display: block;
+}
+
+/*поведение при нажатие на поле*/
+input:focus{
+  outline: none;
+  background: rgb(240, 240, 240);
+  text-decoration: none;
+  border-color: rgb(193, 193, 193);
+  color: white;
+}
+
+input{
+  display: block;
+  width: 90%;
+  height: 5vh;
+  border-radius: 10px;
+  border: 4px solid rgba(218, 221, 220, 1);
+  margin: auto;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+
+/**/
+
+fieldset{
+  width: 15vw;
+  margin: 3vw 4vh;
+  color: white;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+fieldset > label {
+  width: 10vw;
+  margin: 1vw 4vh;
+  font-size: 1em;
+}
+
+.inp {
+  width: 50%;
+  height: 3vh;
+  margin: auto;
+  margin-top: 0.8vh;
+  text-align: center;
+}
+
+textarea{
+  width:90%;
+  margin-top: 10px;
+  margin-left: 35px;;
+}
+
+select{
+  width: 10vw;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.col1{
+  position: absolute;
+  width: 60%;
+  left:20%;
+  
+}
+
+.col2{
+  position: absolute;
+  width: 50%;
+  left:60%;
+  margin-left:10px;
+}
+
+
+::placeholder {
+  font-weight: bold;
+  opacity: .5;
+  color: rgb(163, 181, 205);
+}
+
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.d2{
+    /*background-color:#AD0C0C;*/
+    display: block;
+    position: relative;
+    margin: 40px;
+    padding: 40px;
+    margin-left: 10vw;;
+}
+.d4{
+    background-color: #AD0C0C;
+    border: 20px solid rgba(255, 255, 255, 0.856);
+    display: block;
+    margin: 40px;
+    padding: 50px;
+}
+#Topic4{
+    position: relative;
+    height: 130vh;
+}
+
+.check{
+  margin-top: 30px;
+}
+
+.custom-checkbox{
+  position: absolute;
+  top: 560px;
+  left: 200px;
+}
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+input[type=submit]
+{
+  border-radius: 7px;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding-top: 15px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sub{
+  width:50%;
+  margin-left: 5%;
+}
+
+.button2{
+  position: relative;
+  top: 550px;
+  border-radius: 7px;
+  background-color: #AD0C0C; /* Green */
+  border: none;
+  color: #fefbfb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 650px;
+  padding-right: 650px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  cursor:pointer;
+  width: 100%;
+}
+
+/**/
+.container
+{
+    width: auto;
+    display:flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.container1{
+  width: auto;
+  display:flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.gallery {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    padding: 5px;
+    height: 280px;
+    width: auto;
+    border-radius: 3%;
+}
+
+#menu__toggle, #menu__btn{display: none}
+
+.hamburger-menu
+{
+    width:100%;
+    display:block;
+    float:center;
+    text-align:center; 
+
+}
+
+.hamburger-menu ul{
+    text-align: center; 
+    padding: 0;
+    
+}
+
+ul li{
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px; 
+    margin: 0 5px 0;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:active{
+    color:rgb(234, 142, 195)
+}
+a:visited{
+    color:rgb(40, 132, 129)
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(109, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    background-color: #a70000;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 900px)
+{
+    .d2{width: 10vw; flex-grow: 2;}
+    .d4{width: 25vw;}
+    .aa{width:70vw;}
+    
+    h2{font-size:medium;}
+    .godar{opacity: 0;}
+
+    nav li{
+        display: block;
+        width:20vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }   
+    
+    /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 35vw;;
+        height: 100%;
+        margin: 0;
+        margin-top: 70px;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #AD0C0C;
+        border-color: #ffffff;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex; 
+        align-items: center;  
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px; /*по ширине кнопки расположены три полосы span*/
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    /*составляющие кнопки меню мобилок*/
+    .menu__btn > span, .menu__btn > span::before, .menu__btn > span::after{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px; /*ширина полос, составляющих кнопку меню мобилок-->*/
+        background-color: #ffffff; /*цвет полос, составляющих кнопку меню мобилок-->*/
+    }
+
+    .menu__btn > span::before { /*верхняя полосочка*/
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {/*нижняя полосочка*/
+      content: '';
+      top: 8px;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span { /*разворот полоски после нажатия*/
+    transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before { /*разворот полоски после нажатия*/
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box { /*кнопка меню становится видимой*/
+        visibility: visible;
+        left: 0;
+      }
+}
+
