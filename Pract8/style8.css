@@ -1,0 +1,1641 @@
+/*Общее оформление сайта*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-image: url('white-brick-wall.jpg');*/
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    width:960px;
+    margin:0 auto;
+    padding: 20px;
+    position: relative;
+}
+/*------------------------------------------------------*/
+
+/*Главное меню*/
+header {   
+    position: fixed;
+    width: 100%;
+
+    background: rgb(244, 246, 247);
+    background-repeat: no-repeat;
+  
+    box-shadow: 5px 5px 15px;
+    z-index: 20;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+}
+header > *{
+    padding: 5px 5px 5px 5px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.menu_box> *{
+    margin-left: 15px;
+}
+.img_header{
+    border-radius: 50%;
+    max-width: 70px;
+    width: 100%;
+}
+/*------------------------------------------------------*/
+
+/*Блок с флексами и картинками*/
+#testflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+#testflex > p{
+    background: rgb(249, 251, 253);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: justify;
+    box-shadow: 5px 5px 10px;
+}
+.photo{
+    display: flex;
+}
+.photo > *{
+    flex-basis: 0;
+    flex-grow: 1;
+    width: 18%;
+    height: 18%;
+    margin: 5px;
+    padding: 5px;
+}
+/*------------------------------------------------------*/
+.sp{
+    list-style: none;
+}
+.sp > *{
+    list-style: none;
+}
+/*Ссылки*/
+a{
+    text-decoration: none;
+    color: black;
+    box-sizing: padding-box;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+nav > a:hover
+{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+}
+nav > a:active
+{
+    background-color: rgb(57, 37, 189);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+}
+nav > a:visited
+{ 
+    box-shadow: 5px 5px 10px;
+}
+.aside_test{
+    padding-left: 10px;
+    margin-left: 10px;
+    box-shadow: inset 5px 0 5px -5px;
+}
+/*------------------------------------------------------*/
+
+/*Подвал сайта, информация*/
+footer{
+    width: 100%;
+    background-color: rgb(244, 246, 247);
+    margin-top: 50px;
+    
+    display: grid;
+    grid-template-columns: 400px 1fr 200px;
+    align-items: center;
+}
+r
+footer > .cre{
+    text-align: right;
+}
+#absolut{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 30px;
+    z-index: 0;
+}
+
+@media (max-width: 1001px) {
+    footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+  }
+}
+@media (max-width: 768px) {
+    footer{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+  }
+}
+/*-------------*/
+
+/*------------------------------------------------------*/
+
+
+/*Формы сбора данных и их оформление*/
+.form44
+{
+    background-color: azure;
+    display: inline-block;
+    text-align:right;
+    margin-left: 35%;
+    margin-bottom: 2em;
+}
+.radiobt
+{
+    display: inline;
+}
+*::placeholder{
+    font-style: italic;
+    font-size: 1.2em
+}
+.f2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form2
+{
+    padding: 1em;
+    display: inline-block; 
+    text-align:left; 
+}
+.form2 > div
+{
+    padding: 1em;
+}
+.form3{
+    margin-bottom: 30px;
+}
+
+.check
+{
+    width: 20%;
+    border-radius: 30px;
+    margin-left: 16px;
+    background-color: rgb(172, 211, 220);
+}
+/*------------------------------------------------------*/
+
+/*Окно со встроенным видео*/
+.frame
+{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+iframe{
+    border-style: none;
+    text-align: center;
+}
+/*------------------------------------------------------*/
+
+/*Оформление контента в флексы*/
+.content1{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.content1 > *{
+    margin-top: 10px;
+}
+.article_block{
+    display: flex;
+    justify-content: space-between;
+}
+/*------------------------------------------------------*/
+
+/*Меню-бургер*/
+#burger, [for=burger]{
+    display: none;
+}
+
+.cards{
+    display: flex;
+}
+.cards > img{
+    max-width: 300px;
+}
+/*------------------------------------------------------*/
+
+
+/*Адаптивность сайта*/
+@media(max-width: 768px){
+    .content1{
+        display: block;
+    }
+    .article_block{
+        display: block;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+       
+        align-items: center;
+    }
+    #testflex{
+        flex-direction: column;
+    }
+    #testflex > *{
+        max-width: 750px;
+    }
+    .photo{
+        flex-direction: column;
+    }
+    .photo > *{
+        padding: 5px;
+        width: 30%;
+        height: 30%;
+    }
+    .adapt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        justify-content: center;
+        max-height: 80px;
+    }
+    /*Менюшка*/
+    [for=burger],
+    [for=burger]::before,
+    [for=burger]::after {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        border-radius: 2px;
+    }
+    [for=burger]::before{
+        content: '';
+        margin-top: -8px;
+    }
+    [for=burger]::after {
+        content: '';
+        margin-top: 8px;
+      }
+
+    nav{
+        display: none;
+    }
+    nav > a {
+        margin: 0;
+        padding: 0;
+    }
+    #burger:checked + label + nav{
+        display: flex;
+        position: absolute;
+        top: 0;
+        margin-top: 80px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(178, 192, 201);
+        margin-bottom: 140px;
+    }
+    #burger:checked +[for=burger]::before{
+        margin-top: 0px;
+        transform: rotate(0);
+    }
+    #burger:checked +[for=burger]::after{
+        margin-top: 0px;
+        transform: rotate(90deg);
+    }
+    #burger:checked +[for=burger]{
+        margin-top: 0px;    
+        transform: rotate(45deg);
+    }
+
+}
+/*------------------------------------------------------*/
+
+/*Адаптивность галереи*/
+@media(max-width: 350px)
+{
+    .image-gallery{
+        flex-direction: column;    
+    }
+}
+/*------------------------------------------------------*/
+
+/*Галерея*/
+.container_gallery {
+    padding: 40px 5%;
+  }
+  
+  .heading-text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .heading-text span {
+    font-weight: 100;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Responsive image gallery rules begin*/
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .image-gallery > li {
+    flex-basis: 350px; /*width: 350px;*/
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .image-gallery::after {
+    content: "";
+    flex-basis: 350px;
+  }
+  
+  .image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.8s 0.1s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    border-radius: 20px;
+    /* center overlay text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover */
+  .gallery__list li:hover .overlay {
+    transform: scale(1);
+  }
+  
+/*------------------------------------------------------*/
+
+
+/*Кнопки с анимацией*/
+
+@keyframes button_to_start {
+    from {
+        border-radius: 15px;
+        border: solid;
+        background-color: #66A182;
+    }
+    50% {
+        border-radius: 20px;
+        border: 5px solid;
+        background-color: aquamarine;
+    }
+    to {
+        border-radius: 50%;
+        border: 0.5rem solid;
+        background-color: aqua;
+    }
+}
+/*Кнопка для перехода к началу*/
+.to_start{
+    width: 40px;
+    height: 25px;
+    text-align:center;
+    position:sticky;
+    bottom: 5px;
+    margin-right: 10px;
+    font-size:20px;
+    float: right;
+    z-index: 15;
+    border-radius: 15px;
+    border: solid;
+
+    }
+.to_start:hover{
+    animation-name: button_to_start;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+    animation-play-state: running;
+}
+
+.button_form{
+    border-radius: 10px;
+    border: solid 4px;
+    padding: 7px;
+
+    transition: border-radius 1.25s ease-in-out, background-color 1.25s ease-in-out;
+}
+.button_form:hover{
+    border-radius: 20px;
+    background-color: aquamarine;
+
+}
+
+
+
+.gradient_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .gradient_button > a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    background-color: rgb(49, 47, 47);
+  }
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+
+    transition: border-radius 1.25s ease-in-out, background-color 1.25s ease-in-out, 
+    border 1.25s ease-in-out;
+    transform: rotate(0) translate(0px) scale(1);
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    border-radius: 30px;
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+/*button with border*/
+.box-1{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #66A182;
+    margin-top: 10px;
+  }
+
+.btn1 {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    background-color: #66A182;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .btn-one {
+    color: rgb(53, 31, 31);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .btn-one span {
+    transition: all 0.3s;
+  }
+  .btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+    letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+  }
+  .btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+  }
+/*--------------------------------------------------*/
+
+/*Уведомление*/
+.bellicon{
+    max-width: 50%;
+    max-height: 50%;
+}
+.box-notification{
+position: absolute;
+left: 25%;
+}
+.notifications
+{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+.notifications:hover{
+    width: 300px;
+    height: 60px;
+    text-align: left;
+    padding: 0 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: aquamarine;
+    transition: all 0.5s;
+}
+.notifications .fa-solid:hover{
+color:#fff;
+}
+
+.notifications .fa-solid{
+    color: #cecece;
+    line-height: 60px;
+    font-size: 30px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 100%;
+}
+.notifications .text::before{
+    content: icon;
+}
+.notifications .num{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: aquamarine;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+}
+.notifications:hover .num{
+position: relative;
+background: transparent;
+color:white;
+font-size: 24px;
+top: -4px;
+
+}
+.notifications:hover .notification-list{
+    margin-top: 50px;
+    display: block;
+}    
+.notifications:hover .num::after{
+    content: ' Уведомления';
+    font-family: 'Space Grotesk', sans-serif;
+}
+.notification-list
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.notification-list li{
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0,0, 0.1);
+    padding: 8px 0;
+    display: flex;
+}
+.notification-list li > .icon
+{
+width: 24px;
+height: 24px;
+background: aquamarine;
+border-radius: 50%;
+text-align: center;
+line-height: 24px;
+margin-right: 15px;
+}
+.notification-list li .icon .fa-solid{
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+
+
+}
+.notification-list li .text{
+position: relative;
+font-family: 'Space Grotesk', sans-serif;
+top:3px;
+cursor: pointer;
+
+}
+.notification-list li:hover .text{
+    color:aquamarine;
+}
+
+/*Видео с эффектами*/
+.container2
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+.container2 .box
+{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: #000;
+}
+.container2 .box .videoBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ; 
+    height: 100%;
+}
+.container2 .box .videoBx video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ; 
+    height: 100%;
+    object-fit: cover;
+}
+.container2 .box .contentBx
+{
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    right: 40px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    transition: transform 1.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.container2 .box:hover .contentBx
+{
+    transition: transform 1.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.container2 .box .contentBx .content
+{
+    position: relative;
+    padding: 20px 60px;
+    opacity: 0;
+}
+.container2 .box:hover .contentBx .content
+{
+    opacity: 1;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+.container2 .box .contentBx .content h2{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container2 .box .contentBx .content p{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+/*Карточки с анимацией*/
+.Cards_with_animation{
+    display: flex;
+    justify-content: space-around;
+}
+.card_anm{
+    width: 200px;
+}
+.card_anm h3{
+    padding-bottom: 10px;
+}
+
+/*Карточки с квадратами*/
+
+.glassmorph_cards
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.glassmorph_cards .card_box
+{
+  position: relative;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 1.5s;
+}
+
+.glassmorph_cards .card_box::before
+{
+  content:' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 1.5s;
+}
+
+.glassmorph_cards .card_box::after
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.glassmorph_cards .card_box:hover:before,
+.glassmorph_cards .card_box:hover:after
+{
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 90px);
+  
+}
+
+.glassmorph_cards .card_box:nth-child(1):before,
+.glassmorph_cards .card_box:nth-child(1):after
+{
+  background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+
+.glassmorph_cards .card_box:nth-child(2):before,
+.glassmorph_cards .card_box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.glassmorph_cards .card_box:nth-child(3):before,
+.glassmorph_cards .card_box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+.glassmorph_cards .card_box span
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.glassmorph_cards .card_box span::before
+{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 1.1s;  
+  animation: animate 2s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+}
+
+.glassmorph_cards .card_box:hover span::before
+{
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+.glassmorph_cards .card_box span::after
+{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 1.5s;
+  animation: animate 2s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  animation-delay: -1s;
+}
+
+.glassmorph_cards .card_box:hover span:after
+{
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+}
+
+@keyframes animate
+{
+  from
+  {
+    transform: translateY(10px);
+  }  
+  50%
+  {
+    transform: translate(-10px);
+  }
+  to
+  {
+    transform: translateY(10px);
+  }
+}
+
+.glassmorph_cards .card_box .card_glass_content
+{
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 1.5s;
+  color: #fff;
+}
+
+.glassmorph_cards .card_box:hover .card_glass_content
+{
+  left: -25px;
+  padding: 60px 40px;
+}
+
+.glassmorph_cards .card_box .card_glass_content h2
+{
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.glassmorph_cards .card_box .card_glass_content p
+{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+
+.glassmorph_cards .card_box .card_glass_content a
+{
+  display: inline-block;
+  font-size: 1.1em;
+  color: #111;
+  background: #fff;
+  cursor: cell;
+  padding: 8px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.glassmorph_cards .card_box:nth-child(1) .card_glass_content a:hover
+{
+    background: linear-gradient(315deg, #ffbc00, #ff0058)
+}
+.glassmorph_cards .card_box:nth-child(2) .card_glass_content a:hover
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+.glassmorph_cards .card_box:nth-child(3) .card_glass_content a:hover
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff)
+}
+
+
+/*Кнопки соцсетей---------------------------------------*/
+.social_ref{
+    flex-grow: 0.5;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.social_icon{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    overflow: hidden;
+    height: 40px;
+    padding: 8px;
+    z-index: 5;
+}
+.social_img{
+    position: absolute;
+    padding-top: 4px;
+    padding-left: 5px;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+.social_icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right,#d8ff00 16%,#ff115c );
+    transition: all 1.5s;
+    transform: translateY(-57px);
+    transform-origin: top;
+    z-index: -2;
+}
+.social_icon:hover::before{
+
+    transform: translateY(0);
+  }
+/*--------------------------------------------------------------------*/
+
+
+/*Форма с анимацией*/
+
+.fas {
+    width: 32px;
+  }
+  
+.section_form 
+{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+  
+@keyframes gradient 
+{
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+  
+.form_box {
+position: relative;
+}
+.form_box .square {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10%;
+    animation: square 10s linear infinite;
+    width: calc(20px * var(--i));
+    height: calc(20px * var(--i));
+}
+
+@keyframes square {
+    0% {
+    transform: translateY(-20px);
+    }
+    50% {
+    transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+.form_box .square:nth-child(1) {
+
+    top: -15px;
+    right: -45px;
+}
+
+.form_box .square:nth-child(2) {
+
+    top: 105px;
+    left: -125px;
+    z-index: 2;
+}
+
+.form_box .square:nth-child(3) {
+
+    bottom: 85px;
+    right: -45px;
+    z-index: 2;
+}
+
+.form_box .square:nth-child(4) {
+
+    bottom: 35px;
+    left: -95px;
+}
+
+.form_box .square:nth-child(5) {
+
+    top: -15px;
+    left: -25px;
+}
+
+.form_box .square:nth-child(6) {
+
+    top: 165px;
+    right: -155px;
+    z-index: 2;
+}
+
+  
+.form_anmimated_container {
+position: relative;
+padding: 50px;
+width: 260px;
+min-height: 380px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(5px);
+border-radius: 10px;
+box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+}
+  
+.form_anmimated_container::after {
+content: '';
+position: absolute;
+top: 5px;
+right: 5px;
+bottom: 5px;
+left: 5px;
+border-radius: 5px;
+pointer-events: none;
+background: linear-gradient( to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 2%
+);
+}
+  
+.form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.form  h2 
+{
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.form .inputBx {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form .inputBx input {
+    width: 80%;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 10px;
+    padding-left: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }   
+        
+.form .inputBx .view {
+        background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+        transition: 1.5s;
+}
+
+    
+
+.form .inputBx   .fas {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    }
+    
+    .form .inputBx   input[type="submit"] {
+    background: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    box-shadow: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1.5s;
+    }
+    
+    .form .inputBx   input::placeholder {
+    color: #fff;
+    }
+    
+    .form .inputBx   span {
+        position: absolute;
+        left: 30px;
+        padding: 10px;
+        display: inline-block;
+        color: #fff;
+        transition: 1.5s;
+        pointer-events: none;
+    }
+
+.form p {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.form  p a {
+    color: #fff;
+    }
+    
+.form p  a:hover {
+    background-color: #000;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    }
+
+.remember {
+position: relative;
+display: inline-block;
+color: rgb(0, 0, 0);
+margin-bottom: 10px;
+cursor: pointer;
+}
+
+.inputBx_pl
+{
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    opacity: 30%;
+}
+.inputBx_pl:focus
+{
+    opacity: 60%;
+}
+.inputBx_button{
+    padding-top: 4px;
+    opacity: 30%;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    margin-bottom: 8px;
+}
+textarea
+{
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* blur-boxes  */
+.blur_boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.container {
+    padding: 20px;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    pointer-events: auto;
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: all 1.5s;
+}
+
+.container .card .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    clip-path: circle(150px at center 0);
+    text-align: center;
+}
+
+.container .card .circle h2 {
+    color: white;
+    font-size: 4em;
+    padding: 30px 0;
+}
+
+.container .card .text {
+    position: absolute;
+    bottom: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .text p {
+    color: black;
+    font-size: 18px;
+}
+
+.container .card .text a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .text a {
+    background-color: rgb(81, 255, 0);
+}
+
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .text a {
+    background-color: rgb(0, 68, 255);
+}
+
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .text a {
+    background-color: rgb(160, 71, 205);
+}
+
+.container:hover .card:not(:hover){
+    filter: blur(10px);
+    transform: scale(0.85);
+    opacity: 30%;
+}
+
+/*Карты с обводкой*/
+.moving_line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.around-line {
+    position: relative;
+    z-index: 0;
+    width: 300px;
+    height: 400px;
+    border-radius: 0px;
+    overflow: hidden;
+    display: block;
+    color: white;
+    padding: 40px;
+    text-align: left;
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+.around-line:hover {
+    filter: brightness(150%);
+    transition: 1.5s;
+}
+
+.around-line button {
+    font-size: 1rem;
+    line-height: 2em;
+    margin-top: 50px;
+    padding: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.around-line button:hover {
+    cursor: pointer;
+}
+
+.around-line::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgb(33, 0, 54);
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image: linear-gradient(#00000010, #00000010), linear-gradient(#3379b700, #337AB7), linear-gradient(#00000010, #00000010), linear-gradient(#337AB7, #3379b700);
+    animation: anim-around-line 6s linear infinite;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.around-line:hover:before {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.around-line::after {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: rgb(33, 0, 54);
+    border-radius: 0px;
+}
+
+@keyframes anim-around-line {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gallery {
+    padding: 2rem;
+}
+
+.gallery > h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333333;
+    font-weight: 100;
+  }
+  
+  .gallery > .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 2rem;
+    grid-auto-flow: dense;
+  }
+  .gallery > .gallery__list > li{
+    border-radius: 20px;
+    background: #03a9f4;
+    transition: all 1.5s;
+  }
+  .gallery > .gallery__list > li:hover{
+    transform: scale(1.1);
+
+  }
+  .gallery > .gallery__list > li:nth-child(2n) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .gallery > .gallery__list > li:nth-child(6n) {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .gallery > .gallery__list > li:nth-child(8n) {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  .gallery > .gallery__list > li > figure {
+    height: 100%;
+  }
+  
+  .gallery > .gallery__list > li > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+
+  .form1 {
+    display: grid;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 20px;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+    
+    transition: all 1.5s;
+  }
+  .form1 input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    transition: all 1.5s;
+  }
+  .form1 button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+    transition: all 1.5s;
+  }
+  .form1 button:hover {
+    border-radius: 10px;
+    background: #03a9f4;
+  }
+  
+ .form1 label {
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+  
+ .form1 input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+ .form1 input:focus {
+    background-color: #03a9f4;
+    border-radius: 10px;
+    opacity: 60%;
+  }
+  
+  @media (min-width: 712px) {
+    .form1 {
+      grid-template-columns: 200px 1fr;
+      grid-gap: 16px;
+    }
+  
+    .form1 > label {
+      text-align: right;
+      grid-column: 1 / 2;
+    }
+  
+    .form1 > input {
+      grid-column: 2 / 3;
+    }
+    .form1 > button{
+        grid-column: 2 / 3;
+    }
+  }
+
+  .gridi{
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  .gridi > img{
+    width: 40%;
+    object-fit: contain;
+  }
+  @media (min-width: 768px) {
+    .gridi{
+        grid-template-columns: 1fr 200px;
+    }
+  }
+
+
+  .buttonjs{
+    margin-top: 100px;
+  }
