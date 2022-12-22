@@ -1,0 +1,107 @@
+body{
+    background-image: url('https://ilyakhasanov.ru/images/background/27.jpg');
+    text-align: justify;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    width: auto;
+    background: rgb(204, 211, 217);
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;   
+    box-shadow: 5px 5px 2px;
+    /*внутренний отступ*/
+    padding: 10px 0px 70px 10px;
+    /*внешний отступ*/
+    margin-bottom: 40px;
+}
+
+.img_header {
+    float: left;
+    width: 170px;
+    margin: 10px;
+}
+
+nav
+{
+    display: flex;
+}
+nav > a{
+    font-size: large;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+}
+
+#testflex{
+    display: flex;
+}
+#testflex > li{
+    background: rgb(204, 211, 217);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    flex-basis: 100%;
+    text-align: justify;
+    box-shadow: 5px 5px 2px;
+    
+}
+
+/*Ссылки*/
+a{
+    text-decoration: none;
+    color: black;
+    box-sizing: padding-box;
+    padding: 5px;
+}
+
+
+a:hover
+{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    text-decoration: underline;
+    box-shadow: 5px 5px 2px;
+}
+a:active
+{
+    background-color: rgb(57, 37, 189);
+    border-radius: 20px;
+    text-decoration: underline;
+    box-shadow: 5px 5px 2px;
+}
+a:visited
+{ 
+    box-shadow: 5px 5px 2px;
+    background-color: rgb(94, 40, 135);
+}
+.aside_test{
+    width: 15%;
+    padding-left: 8px;
+    margin-left: 50px;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px;
+    text-align: justify;
+}
+
+footer{
+    border: solid 4px rgb(132, 38, 134);
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.adr{
+    display: flex;
+
+    margin: 20px;
+}
+.adr > *{
+    flex-basis: 100%
+}
+#title4{
+    text-align: center;
+}
+.adr > p > a{
+    padding: 15px;
+}
+
